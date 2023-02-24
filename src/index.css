@@ -1,0 +1,23 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-user-select: none;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "normal normal normal 20px/1.4em futura-lt-w01-book,futura-lt-w05-book,sans-serif";   /*Can be any text*/
+  src: local("FuturaLT-Book"),
+    url("./assets/FuturaLT-Book.ttf") format("truetype");
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'normal normal normal 20px/1.4em futura-lt-w01-book,futura-lt-w05-book,sans-serif';
+}
+
+a {
+  text-decoration: none;
+  color: rgb(7, 64, 65);
+}
+
