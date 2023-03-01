@@ -37,7 +37,7 @@ const Header = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
   return (
-    <div className="header">
+    <div className="navbar">
       <div className="logo">
         <NavLink to="/">
           <img
@@ -47,7 +47,7 @@ const Header = () => {
           />
         </NavLink>
       </div>
-      <ul className={`${hamburgerOpen ? "mobileNavbar" : "navbar"}`}>
+      <ul className={`${hamburgerOpen ? "mobileNavbar" : "navlinks"}`}>
         {menu.map((item, i) => {
           return (
             <NavLink key={i} to={item.path}>

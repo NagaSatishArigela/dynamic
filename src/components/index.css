@@ -1,9 +1,9 @@
-.header {
+/* .header {
   display: flex;
   position: relative;
   height: 108px;
   max-width: 100%;
-}
+} */
 
 .logo {
   position: relative;
@@ -13,11 +13,18 @@
 }
 
 .navbar {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   list-style-type: none;
-  position: relative;
-  top: 40px;
-  left: 240px;
+  height: 108px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
 }
 
 .mobileNavbar {
@@ -41,8 +48,43 @@ a :hover {
   display: none !important;
 }
 
-@media screen and (max-width: 600px) {
-  .header {
+@media screen and (max-width: 780px) {
+
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobileNavbar {
+    top: 75px;
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+
+  li {
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    font-size: 16px;
+    transition: all 0.5s ease;
+  }
+
+  .hamburger {
+    display: inline-flex !important;
+    width: 30px;
+    justify-content: center;
+  }
+  /* .header {
     height: 50px;
     justify-content: space-between;
     align-items: center;
@@ -76,5 +118,5 @@ a :hover {
     display: inline-flex !important;
     width: 30px;
     justify-content: center;
-  }
+  } */
 }
